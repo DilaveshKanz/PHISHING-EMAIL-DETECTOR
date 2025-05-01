@@ -56,7 +56,7 @@ def main():
     result, confidence = predict_email(text, model, vectorizer)
 
     print(f"\n{'='*30}")
-    print(f"Result: {'🚨 SPAM' if result == 'SPAM' else '✅ LEGIT'}")
+    print(f"Result: {'🚨 PHISHING' if result == 'SPAM' else '✅ LEGIT'}")
     print(f"Confidence: {confidence*100:.2f}%")
     print(f"{'='*30}\n")
 
